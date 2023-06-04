@@ -1,37 +1,109 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>Surprise!</title>
   <style>
     body {
+      background-color: #f7e8e8;
       font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
     }
-    .surprise-card {
+
+    .card {
       width: 400px;
+      margin: 100px auto;
+      padding: 20px;
       background-color: #fff;
       border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       text-align: center;
     }
-    .surprise-message {
-      font-size: 24px;
-      color: #FF4081;
-      margin-bottom: 20px;
+
+    h1 {
+      font-size: 30px;
+      color: #d81b60;
+      margin-top: 0;
+    }
+
+    .left-text {
+      float: left;
+      color: #d81b60;
+      font-size: 20px;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+
+    .right-text {
+      float: right;
+      color: #d81b60;
+      font-size: 20px;
+      margin-top: 10px;
+      margin-right: 10px;
+    }
+
+    .message {
+      font-size: 16px;
+      color: #777;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .heart-container {
+      margin-top: 30px;
+    }
+
+    .heart {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin: 0 5px;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="surprise-card">
-    <h1 class="surprise-message">Congratulations on your first one-month anniversary!</h1>
-    <p>Enjoy the day and create beautiful memories together!</p>
+  <div class="card">
+    <h1>Surprise!</h1>
+    <div class="heart-container">
+      <span class="heart">&#x2665;</span>
+      <span class="heart">&#x2665;</span>
+      <span class="heart">&#x2665;</span>
+      <span class="heart">&#x2665;</span>
+      <span class="heart">&#x2665;</span>
+    </div>
+    <div>
+      <p class="left-text">❤️ Happy One-Month</p>
+      <p class="right-text">Anniversary! ❤️</p>
+    </div>
+    <div style="clear: both;"></div>
+    <div>
+      <p class="message">My dearest LOVE(ANCHAL),</p>
+      <p class="message">On this special one-month anniversary, I want to express my deepest love and appreciation for you. You have brought immense joy and happiness into my life, and I am grateful for every moment we have spent together.</p>
+      <p class="message">Despite our occasional disagreements and the times when I may have unintentionally hurt you, please know that my love for you surpasses any challenges we may face. Our bond is strong, and I am committed to working through any obstacles that come our way, hand in hand.</p>
+      <p class="message">Your presence in my life has filled it with love, laughter, and countless beautiful memories. Each day spent with you feels like a dream, and I cherish the bond we share.</p>
+      <p class="message">As we continue this journey together, I look forward to creating more wonderful memories and growing even closer. You are my soulmate, my confidant, and my best friend, and I feel incredibly blessed to have you by my side.</p>
+      <p class="message">With all my love,</p>
+      <p class="message">Your LUCIFER</p>
+    </div>
+    <div class="heart-container">
+      <span class="heart">&#x2665;</span>
+      <span class="heart">&#x2665;</span>
+      <span class="heart">&#x2665;</span>
+      <span class="heart">&#x2665;</span>
+      <span class="heart">&#x2665;</span>
+    </div>
   </div>
 </body>
 </html>
